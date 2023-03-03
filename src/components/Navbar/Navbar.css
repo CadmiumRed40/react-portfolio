@@ -1,0 +1,8 @@
+nav {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 40rem;
+    height: 6vh;
+    background-color: rgb(68, 82, 95);
+    color:blanchedalmond
+}
