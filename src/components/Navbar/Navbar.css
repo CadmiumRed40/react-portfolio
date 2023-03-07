@@ -1,15 +1,56 @@
-nav {
+.nav-bar {
+    background-image: linear-gradient(to bottom, #000000, #000000);
+    border: 1px solid rgba(255, 255, 255, 0.755);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 5px;
+    padding: 15px;
+    margin: 5px;
+  }
+  
+  .nav-bar ul {
+    list-style: none;
     display: flex;
-    flex-direction: row-reverse;
-    width: 100%;
-    height: 6vh;
-    background-color: rgb(68, 82, 95);
-    color:blanchedalmond;
-    padding: 2vw;
-}
-
-#Nav-links {
-    display: flex;
-    flex-direction: row-reverse;
-    padding-right: 10vh;
-}
+    justify-content: space-between;
+  }
+  
+  .nav-bar a {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .nav-bar a:hover {
+    color: #a8a8a8;
+  }
+  
+  .nav-bar::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -1;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .nav-bar {
+      padding: 10px;
+    }
+    
+    .nav-bar ul {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .nav-bar a {
+      font-size: 12px;
+    }
+  }

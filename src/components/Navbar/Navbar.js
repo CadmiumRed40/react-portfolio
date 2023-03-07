@@ -5,21 +5,14 @@ import "../Navbar/Navbar.css"
 export default function Navbar() {
   return (
     <div>
-      <nav>
-        <div id='Nav-links'>
+      <nav className='nav-bar'>
         <ul>
-          <a href=''>Skills</a>
+          <li><a href="#">About me</a></li>
+          <li><a href="#">Skills</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Contact Me</a></li>
+          <li><a href="#">More Info</a></li>
         </ul>
-        <ul>
-          <a href=''>Projects</a>
-        </ul>
-        <ul>
-          <a href=''>Contact Me</a>
-        </ul>
-        <ul>
-          <a href=''>More Info</a>
-        </ul>
-        </div>
       </nav>
     </div>
   )
