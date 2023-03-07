@@ -1,8 +1,15 @@
 nav {
     display: flex;
     flex-direction: row-reverse;
-    width: 40rem;
+    width: 100%;
     height: 6vh;
     background-color: rgb(68, 82, 95);
-    color:blanchedalmond
+    color:blanchedalmond;
+    padding: 2vw;
+}
+
+#Nav-links {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-right: 10vh;
 }

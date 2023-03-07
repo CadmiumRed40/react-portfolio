@@ -1,0 +1,13 @@
+#Main-container {
+    background-color: rgba(57, 60, 75, 0.513);
+    width:80vh;
+    height: 20vh;
+    margin:3vh;
+    border-radius: 5px;
+}
+
+#Welcome-text {
+    text-align: left;
+    margin: 5vh;
+    padding-top: 1vh;
+}
