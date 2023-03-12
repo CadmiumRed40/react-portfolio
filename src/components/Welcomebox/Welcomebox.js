@@ -1,5 +1,6 @@
 import React from 'react'
 import '../Welcomebox/Welcomebox.css'
+import '../Welcomebox/profilePic.jpeg'
 
 export default function Welcomebox() {
   return (
@@ -12,7 +13,7 @@ export default function Welcomebox() {
             </div>
         </header>
 
-        <img src='/Users/bluecobalt/Documents/Coding/REACTAPPS/react-portfolio-website/src/components/Welcomebox/IMG_20170223_155522_148.jpeg' alt='profile-pic'></img>
+        <img src={require('./profilePic.jpeg')} alt='profile-pic'></img>
         </div>
     </div>
   )
