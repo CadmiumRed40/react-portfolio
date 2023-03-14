@@ -2,16 +2,23 @@
     margin: 20px;
     padding: 10px;
     border: 1px solid #ccc;
+    width: 90vh;
   }
   
   .carousel-container {
     display: flex;
+    align-items: center;
     flex-wrap: nowrap;
     overflow-x: scroll;
     scrollbar-width: none;
     -ms-overflow-style: none;
   }
   
+  .scroll-button .left{ 
+    height: 15vh; 
+    position: fixed ;  
+  }
+
   .carousel-container::-webkit-scrollbar {
     display: none;
   }
@@ -30,12 +37,13 @@
   }
   
   .skill-container img {
-    width: 100%;
-    height: 100%;
+    width: 14vh;
+    height: 14vh;
     object-fit: contain;
   }
   
   .skill-container p {
+    color: white;
     margin-top: 10px;
     font-size: 14px;
   }
