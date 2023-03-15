@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React /*, { useRef}*/ from 'react'
 import './Skillbox.css'
 import '../Skillbox/icons/git.png'
 import '../Skillbox/icons/html5.png'
@@ -54,15 +54,20 @@ export default function Skillbox() {
       },
       
     ];
-   
+/*
+   const scrollLeft = () => {
+    setVisibleSlide(visibleSlide - 1)
+   }
 
-   
+   const scrollRight = () => {
+    setVisibleSlide(visibleSlide + 1)
+   }
+
 const ref = useRef(null);
 
 const scroll = (scrollOffset) => {
   ref.current.scrollLeft += scrollOffset;
-};
-
+};*/
    return (
     <div className='skill-component-container'>
       
@@ -70,9 +75,9 @@ const scroll = (scrollOffset) => {
         
         <div className="skills-carousel row">
 
-          <button className="scroll-button left row" onClick={() => scroll(-20)}>
+          {/*<button className='scroll-button left row' onClick={() => scroll(-20)}>
             &lt;
-          </button>
+          </button>*/}
 
           <div className="carousel-container">
             {skills.map((skill, index) => (
@@ -85,9 +90,10 @@ const scroll = (scrollOffset) => {
               </div>
             ))}
           </div>
-            <button className="scroll-button right row" onClick={() => scroll(20)}>
+            {/*<button className='scroll-button right row'
+            onClick={() => scroll(20)}>
                &gt;
-             </button>
+            </button>*/}
         </div>
       
     </div>

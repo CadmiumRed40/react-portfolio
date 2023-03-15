@@ -1,5 +1,5 @@
 .nav-bar {
-    margin: 5px;  
+    margin: 20px;  
     backdrop-filter: blur(10px);
     background-image: linear-gradient(to bottom, #000000, #000000ec, #00000042);
     border: 1px solid rgba(255, 255, 255, 0.755);
@@ -25,19 +25,6 @@
   
   .nav-bar a:hover {
     color: #997cb5;
-  }
-  
-  .nav-bar::before {
-    content: "";
-    position: absolute;
-    top: -5px;
-    left: -5px;
-    right: -5px;
-    bottom: -5px;
-    z-index: -1;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 20px;
-    backdrop-filter: blur(20px);
   }
   
   @media only screen and (max-width: 600px) {

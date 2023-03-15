@@ -1,0 +1,33 @@
+.projects-container-main {    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: auto;
+    background-image: linear-gradient(to bottom, #000000, #000000, #00000041);
+    box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 5px;   
+}
+
+.project-header{
+    color: white;
+}
+
+.tabs-buttons .col1{
+    flex-direction: row;
+    background-color: #2a284320;
+    color:white;
+    width: 20vw;
+    height: 5vh;
+    border-radius: 5px;
+    border-style: none;
+    transition: background-color .3s ease-out 100ms
+}
+
+.tabs-buttons .col1:hover {
+    animation-duration: .5s;
+    background-color: #5a607f8b;
+}

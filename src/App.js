@@ -1,6 +1,7 @@
 import Navbar from './components/Navbar/Navbar';
 import Skillbox from './components/Skillbox/Skillbox';
 import Welcomebox from './components/Welcomebox/Welcomebox';
+import Projects from './components/Projects/Projects';
 import './App.css';
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
       <Navbar />
       <Welcomebox />
       <Skillbox />
+      <Projects />
     </div>
   );
 }
