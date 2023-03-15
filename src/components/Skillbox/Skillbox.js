@@ -1,4 +1,4 @@
-import React, { useRef} from 'react'
+import React, { useRef } from 'react'
 import './Skillbox.css'
 import '../Skillbox/icons/git.png'
 import '../Skillbox/icons/html5.png'
@@ -54,55 +54,42 @@ export default function Skillbox() {
       },
       
     ];
-    
-    //defining a function to handle the scrolling
-    /*
-      const handleScroll = (event) => {
-      const delta = Math.sign(event.deltaY) // Checking the direction of the scroll
-      const carousel = event.currentTarget;
-      carousel.scrollLeft += delta * 100; // Adjust scroll position
-   };
-   */
+   
 
-   //function ScrollingComponent({ skills }) {
-    const containerRef = useRef(null);
-  
-    const handleScrollLeft = () => {
-      containerRef.current.scrollBy({
-        left: -100,
-        behavior: 'smooth',
-      });
-    };
-  
-    const handleScrollRight = () => {
-      containerRef.current.scrollBy({
-        left: 100,
-        behavior: 'smooth',
-      });
-    };
-//}
+   
+const ref = useRef(null);
+
+const scroll = (scrollOffset) => {
+  ref.current.scrollLeft += scrollOffset;
+};
 
    return (
-    <div className="skills-carousel">
-      <h2>Skills</h2>
-      <div className="carousel-container"//onWheel={handleScroll}>
-      >
-          <button className="scroll-button left" onClick={ handleScrollLeft }>
-          &lt;
+    <div className='skill-component-container'>
+      
+      <h2 id='skill-header'>Skills</h2>
+        
+        <div className="skills-carousel row">
+
+          <button className="scroll-button left row" onClick={() => scroll(-20)}>
+            &lt;
           </button>
 
-        {skills.map((skill, index) => (
-          <div className="skill-container" key={index}>
-            <img src={skill.icon} alt="Skill icon" />
-            <p>{skill.description}</p>
+          <div className="carousel-container">
+            {skills.map((skill, index) => (
+
+              <div className="skill-container" key={index}>
+                
+                <img src={skill.icon} alt="Skill icon" />
+                  <p>{skill.description}</p>
+              
+              </div>
+            ))}
           </div>
-        ))}
-
-          <button className="scroll-button right" onClick={ handleScrollRight }>
-            &gt;
-          </button>
-
-      </div>
+            <button className="scroll-button right row" onClick={() => scroll(20)}>
+               &gt;
+             </button>
+        </div>
+      
     </div>
   )
 }

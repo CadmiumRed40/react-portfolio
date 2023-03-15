@@ -1,8 +1,32 @@
-.skills-carousel {
-    margin: 20px;
-    padding: 10px;
+.skill-component-container{
+    display: flex;
+    flex-direction: column;
     border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 5px;
+}
+
+.scroll-button .left .right{ 
+    height: 15vh; 
+    position: fixed;
+}
+
+#skill-header{
+    text-align: center;
+    color: white;
+}
+
+.skills-carousel {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
     width: 90vh;
+    overflow: hidden;
+    mask: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 15%, rgba(255,255,255,1) 25%, 
+    rgba(255,255,255,1) 35%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 65%, 
+    rgba(255,255,255,1) 75%, rgba(255,255,255,1) 85%, rgba(255,255,255,0) 100%);
   }
   
   .carousel-container {
@@ -13,11 +37,6 @@
     scrollbar-width: none;
     -ms-overflow-style: none;
   }
-  
-  .scroll-button .left{ 
-    height: 15vh; 
-    position: fixed ;  
-  }
 
   .carousel-container::-webkit-scrollbar {
     display: none;
@@ -25,7 +44,7 @@
   
   .skill-container {
     flex: 0 0 auto;
-    width: 200px;
+    width: 150px;
     margin-right: 20px;
     text-align: center;
     opacity: 0.7;
@@ -37,8 +56,8 @@
   }
   
   .skill-container img {
-    width: 14vh;
-    height: 14vh;
+    width: 13vh;
+    height: 13vh;
     object-fit: contain;
   }
   
