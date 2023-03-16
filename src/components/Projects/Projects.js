@@ -10,7 +10,6 @@ export default function Projects() {
             </div>
 
             <div className='tabs-button-container'>
-
                 <div className='tabs-buttons'>
                     <button className='programming-projects-tab col1'>
                         <span>Projects</span>
@@ -19,10 +18,25 @@ export default function Projects() {
                         <span>Design</span>
                     </button>
                 </div>
-
-                
-
             </div>
+
+            <div className='project-table-container'>
+                <table>
+                    <tr>
+                        <td>Project 1</td>
+                        <td>Project 2</td>
+                    </tr>
+                    <tr>
+                        <td>Project 3</td>
+                        <td>Project 4</td>
+                    </tr>
+                    <tr>
+                        <td>Project 5</td>
+                        <td>Project 6</td>
+                    </tr>
+                </table>
+            </div>
+
         </div>
     </div>
   )

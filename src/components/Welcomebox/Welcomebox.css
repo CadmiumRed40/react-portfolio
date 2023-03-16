@@ -1,7 +1,7 @@
 .main-container{
   display:flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items:center;
   overflow:auto;
   margin: 20px
@@ -45,16 +45,17 @@
   .main-container img {
     flex-direction: row;
     justify-content: baseline;
-    border-radius: 5px;
-    margin: 50px;
-    width: 40vh;
-    height: 45vh;
+    margin: 20px 50px 20px 20px; 
+    margin-right: 50px;
+    width: auto;
+    height: 50vh;
     overflow: visible;
   }
   
   @media screen and (max-width: 768px) {
+
     .header {
-      height: 150px;
+      height: 220px;
       padding: 10px;
     }
   
@@ -91,6 +92,7 @@
     .main-container img {
       display: flex;
       flex-direction: column;
+      border-radius: 10px;
     }
   }
 

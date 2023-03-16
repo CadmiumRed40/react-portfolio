@@ -1,4 +1,6 @@
 .App {
-  background-color: rgb(57, 56, 104);
+  background: rgb(2,0,31);
+  background: linear-gradient(351deg, rgba(2,0,31,1) 0%, rgba(9,7,38,1) 10%, rgba(12,10,41,1) 22%, rgba(97,97,124,1) 64%, rgba(238,197,213,1) 100%);
   width: 100%;
+  position:absolute;
 }

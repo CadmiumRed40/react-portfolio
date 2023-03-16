@@ -24,10 +24,22 @@
     height: 5vh;
     border-radius: 5px;
     border-style: none;
-    transition: background-color .3s ease-out 100ms
+    transition: background-color .3s ease-out 100ms;
+    margin-bottom: 5vh;
 }
+
 
 .tabs-buttons .col1:hover {
     animation-duration: .5s;
     background-color: #5a607f8b;
+}
+
+td {
+    color: white;
+    width: 30vh;
+    height:30vh;
+    border:1px solid #ffffff;
+    border-radius: 5px;
+    padding: 5px;
+
 }

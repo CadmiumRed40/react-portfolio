@@ -12,10 +12,10 @@
     padding: 5px;
 }
 
-.scroll-button .left .right{ 
+/*.scroll-button .left .right{ 
     height: 15vh; 
     position: fixed;
-}
+}*/
 
 #skill-header{
     display: block;
@@ -29,11 +29,7 @@
     justify-content: center;
     margin: 10px;
     padding: 10px;
-    width: 90vh;
-    overflow: hidden;
-    mask: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 15%, rgba(255,255,255,1) 25%, 
-    rgba(255,255,255,1) 35%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 65%, 
-    rgba(255,255,255,1) 75%, rgba(255,255,255,1) 85%, rgba(255,255,255,0) 100%);
+    width: 90vw;
   }
   
   .carousel-container {
@@ -63,8 +59,8 @@
   }
   
   .skill-container img {
-    width: 13vh;
-    height: 13vh;
+    width: 11vh;
+    height: 11vh;
     object-fit: contain;
   }
   
@@ -72,4 +68,13 @@
     color: white;
     margin-top: 10px;
     font-size: 14px;
+  }
+
+  @media screen and (max-width: 1200px){
+    .skills-carousel{
+        overflow: hidden;
+    mask: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 15%, rgba(255,255,255,1) 25%, 
+    rgba(255,255,255,1) 35%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 65%, 
+    rgba(255,255,255,1) 75%, rgba(255,255,255,1) 85%, rgba(255,255,255,0) 100%);
+    }
   }
