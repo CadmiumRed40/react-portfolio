@@ -1,8 +1,19 @@
 import React from 'react'
 import '../Projects/Projects.css'
+import '../Projects/placeholder.jpg'
 
 export default function Projects() {
-  return (
+
+    var placeHolderIcon = require('../Projects/placeholder.jpg')
+
+    const project = [
+        {
+            icon: placeHolderIcon,
+            name: "PlaceHolder",
+        }
+   ];
+  
+    return (
     <div>
         <div className='projects-container-main'>
             <div className='project-header'>
@@ -23,7 +34,10 @@ export default function Projects() {
             <div className='project-table-container'>
                 <table>
                     <tr>
-                        <td>Project 1</td>
+                        <td>
+                            <img src={project.icon} alt='picon' className='project-icon'></img>
+                            <p className='project-desc'>placeholder</p>
+                        </td>
                         <td>Project 2</td>
                     </tr>
                     <tr>
