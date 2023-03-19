@@ -6,10 +6,12 @@ export default function Projects() {
 
     var placeHolderIcon = require('../Projects/placeholder.jpg')
 
-    const project = [
+    const projects = [
         {
-            icon: placeHolderIcon,
             name: "PlaceHolder",
+            icon: placeHolderIcon,
+            description: "Placeholder",
+            
         }
    ];
   
@@ -32,23 +34,49 @@ export default function Projects() {
             </div>
 
             <div className='project-table-container'>
+            {projects.map ((project,index) => (
                 <table>
-                    <tr>
-                        <td>
-                            <img src={project.icon} alt='picon' className='project-icon'></img>
-                            <p className='project-desc'>placeholder</p>
+                    
+                    <tr className='row1'>
+                        <td className='project-cell'>
+                            <h3>{project.name}</h3>
+                            <img src={project.icon} alt='p-icon' className='project-icon'></img>
+                            <p className='project-desc'>{project.description}</p>
                         </td>
-                        <td>Project 2</td>
+                        <td className='project-cell'>
+                            <h3>{project.name}</h3>
+                            <img src={project.icon} alt='p-icon' className='project-icon'></img>
+                            <p className='project-desc'>{project.description}</p>
+                        </td>
                     </tr>
-                    <tr>
-                        <td>Project 3</td>
-                        <td>Project 4</td>
+                    <tr className='row2'>
+                        <td className='project-cell'>
+                            <h3>{project.name}</h3>
+                            <img src={project.icon} alt='p-icon' className='project-icon'></img>
+                            <p className='project-desc'>{project.description}</p>
+                        </td>
+                        <td className='project-cell'>
+                            <h3>{project.name}</h3>
+                            <img src={project.icon} alt='p-icon' className='project-icon'></img>
+                            <p className='project-desc'>{project.description}</p>
+                        </td>
                     </tr>
-                    <tr>
-                        <td>Project 5</td>
-                        <td>Project 6</td>
-                    </tr>
+                    <tr className='row3'>
+                        <td className='project-cell'>
+                            <h3>{project.name}</h3>
+                            <img src={project.icon} alt='p-icon' className='project-icon'></img>
+                            <p className='project-desc'>{project.description}</p>
+                        </td>
+                        <td className='project-cell'>
+                            <h3>{project.name}</h3>
+                            <img src={project.icon} alt='p-icon' className='project-icon'></img>
+                            <p className='project-desc'>{project.description}</p>
+                        </td>
+                    </tr> 
+                   
+                    
                 </table>
+                 ))};
             </div>
 
         </div>

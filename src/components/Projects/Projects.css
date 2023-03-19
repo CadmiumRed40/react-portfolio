@@ -34,17 +34,29 @@
     background-color: #5a607f8b;
 }
 
+.row1, .row2, .row3 {
+    display: flex;
+    flex-direction: row;
+}
+
+.project-cell{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 td {
     color: white;
-    width: 30vh;
-    height:30vh;
+    width: 40vw;
+    height:45vh;
     border:1px solid #ffffff;
     border-radius: 5px;
     padding: 5px;
-
+    margin: 10px;
 }
 
 .project-icon{
-    width: 50px;
-    height:auto;
+    width: 35vw;
+    height:30vh;
 }
+
