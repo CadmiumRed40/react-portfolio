@@ -40,7 +40,27 @@ export default function Projects() {
                     <tr className='row1'>
                         <td className='project-cell'>
                             <h3>{project.name}</h3>
+                            <Popup trigger=
+                            {<button>
                             <img src={project.icon} alt='p-icon' className='project-icon'></img>
+                            </button>}
+                            modal nested>
+                            {
+                                close => (
+                                    <div className='modal'>
+                                        <div className='content'>
+                                            Welcome to GFG!!!
+                                        </div>
+                                        <div>
+                                            <button onClick=
+                                                {() => close()}>
+                                                    Close modal
+                                            </button>
+                                            </div>
+                                            </div>
+                                            )
+                            }
+                            </Popup>
                             <p className='project-desc'>{project.description}</p>
                         </td>
                         <td className='project-cell'>

@@ -12,11 +12,6 @@
     padding: 5px;
 }
 
-/*.scroll-button .left .right{ 
-    height: 15vh; 
-    position: fixed;
-}*/
-
 #skill-header{
     display: block;
     text-align: center;
@@ -72,8 +67,8 @@
 
   @media screen and (max-width: 1200px){
     .skills-carousel{
-        overflow: hidden;
-    mask: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 15%, rgba(255,255,255,1) 25%, 
+      overflow: hidden;
+      mask: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 15%, rgba(255,255,255,1) 25%, 
     rgba(255,255,255,1) 35%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 65%, 
     rgba(255,255,255,1) 75%, rgba(255,255,255,1) 85%, rgba(255,255,255,0) 100%);
     }
