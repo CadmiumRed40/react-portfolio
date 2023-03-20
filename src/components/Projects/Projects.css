@@ -68,9 +68,10 @@ button:hover{
     opacity: 1;
 }
 
-.modal {
+.popup-modal {
     width: 90vw;
     height: 57.5vh;
+    padding: 20px;
 }
 
 .project-icon-modal {

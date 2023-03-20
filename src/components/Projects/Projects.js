@@ -42,11 +42,12 @@ export default function Projects() {
                     <tr className='row1'>
                         <td className='project-cell'>
                             <h3>{project.name}</h3>
-                            <Popup trigger=
-                            {<button>
+                            <Popup className='popup'
+                            trigger= {
+                            <button>
                             <img src={project.icon} alt='p-icon' className='project-icon'></img>
-                            </button>}
-                            modal nested>
+                            </button>
+                            } modal nested>
                             {
                                 close => (
                                     <div className='modal'>
