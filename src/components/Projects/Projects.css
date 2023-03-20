@@ -68,6 +68,17 @@ button:hover{
     opacity: 1;
 }
 
+.modal {
+    width: 90vw;
+    height: 57.5vh;
+}
+
+.project-icon-modal {
+    position: relative;
+    width: 50vw;
+    height:47.5vh;
+}
+
 @media screen and (max-width: 480px) {
     .row1, .row2, .row3 {
         display: flex;

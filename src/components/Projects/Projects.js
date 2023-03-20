@@ -1,4 +1,6 @@
 import React from 'react'
+import Popup from 'reactjs-popup'
+import 'reactjs-popup/dist/index.css';
 import '../Projects/Projects.css'
 import '../Projects/placeholder.jpg'
 
@@ -11,7 +13,7 @@ export default function Projects() {
             name: "PlaceHolder",
             icon: placeHolderIcon,
             description: "Placeholder",
-            
+            expanded:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Donec massa sapien faucibus et molestie. Suspendisse faucibus interdum posuere lorem ipsum dolor sit amet."
         }
    ];
   
@@ -48,13 +50,15 @@ export default function Projects() {
                             {
                                 close => (
                                     <div className='modal'>
-                                        <div className='content'>
-                                            Welcome to GFG!!!
+                                        <div>
+                                            <h4>{project.name}</h4>
+                                            <img src={project.icon} alt='p-icon-modal' className='project-icon-modal'></img>
+                                            <p>{project.expanded}</p>
                                         </div>
                                         <div>
                                             <button onClick=
                                                 {() => close()}>
-                                                    Close modal
+                                                    Close
                                             </button>
                                             </div>
                                             </div>
