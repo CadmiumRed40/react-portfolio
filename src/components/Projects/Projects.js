@@ -1,8 +1,10 @@
 import React from 'react'
 import Popup from 'reactjs-popup'
-import 'reactjs-popup/dist/index.css';
+//import 'reactjs-popup/dist/index.css';
 import '../Projects/Projects.css'
-import '../Projects/placeholder.jpg'
+//import Modal from 'react'
+import '../Projects/placeholder.jpg' 
+
 
 export default function Projects() {
 
@@ -16,7 +18,8 @@ export default function Projects() {
             expanded:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Donec massa sapien faucibus et molestie. Suspendisse faucibus interdum posuere lorem ipsum dolor sit amet."
         }
    ];
-  
+    
+
     return (
     <div>
         <div className='projects-container-main'>
@@ -51,22 +54,24 @@ export default function Projects() {
                                         {
                                         close => (
                                     <div className='modal'>
-                                        <div>
+
+                                        <div className='modal-content'>
                                             <h4>{project.name}</h4>
                                             <img src={project.icon} alt='p-icon-modal' className='project-icon-modal'></img>
                                             <p>{project.expanded}</p>
                                         </div>
+
                                         <div>
-                                            <button onClick=
+                                            <button className='modal-close-button' onClick=
                                                 {() => close()}>
                                                     Close
                                             </button>
                                         </div>
-                                        </div>
+                                    </div>
                                 )
                             }
                                 </Popup>
-                            <p className='project-desc'>{project.description}</p>
+                        <p className='project-desc'>{project.description}</p>
                         </td>
                         <td className='project-cell'>
                             <h3>{project.name}</h3>
