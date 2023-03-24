@@ -68,10 +68,24 @@ button:hover{
     opacity: 1;
 }
 
-.popup-modal {
-    width: 90vw;
-    height: 57.5vh;
-    padding: 20px;
+.modal {
+    color: #ffffff;
+    display:flex;
+    width: fit-content;
+    height: auto;
+    background-image: linear-gradient(to bottom, #000000, #000000, #00000041);
+    box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal::backdrop{
+    background-color: #00000043;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
 }
 
 .project-icon-modal {
