@@ -73,34 +73,164 @@ export default function Projects() {
                                 </Popup>
                         <p className='project-desc'>{project.description}</p>
                         </td>
+
                         <td className='project-cell'>
-                            <h3>{project.name}</h3>
-                            <img src={project.icon} alt='p-icon' className='project-icon'></img>
-                            <p className='project-desc'>{project.description}</p>
+                        <h3>{project.name}</h3>
+                                <Popup className='popup'
+                                    trigger= {
+                                    <button>
+                                        <img src={project.icon} alt='p-icon' className='project-icon'></img>
+                                    </button>
+                                        } modal nested>
+                                        {
+                                        close => (
+                                    <div className='modal'>
+
+                                        <div className='modal-content'>
+                                            <h4>{project.name}</h4>
+                                            <img src={project.icon} alt='p-icon-modal' className='project-icon-modal'></img>
+                                            <p>{project.expanded}</p>
+                                        </div>
+
+                                        <div>
+                                            <button className='modal-close-button' onClick=
+                                                {() => close()}>
+                                                    Close
+                                            </button>
+                                        </div>
+                                    </div>
+                                )
+                            }
+                                </Popup>
+                        <p className='project-desc'>{project.description}</p>
                         </td>
                     </tr>
+
                     <tr className='row2'>
                         <td className='project-cell'>
-                            <h3>{project.name}</h3>
-                            <img src={project.icon} alt='p-icon' className='project-icon'></img>
-                            <p className='project-desc'>{project.description}</p>
+                        <h3>{project.name}</h3>
+                                <Popup className='popup'
+                                    trigger= {
+                                    <button>
+                                        <img src={project.icon} alt='p-icon' className='project-icon'></img>
+                                    </button>
+                                        } modal nested>
+                                        {
+                                        close => (
+                                    <div className='modal'>
+
+                                        <div className='modal-content'>
+                                            <h4>{project.name}</h4>
+                                            <img src={project.icon} alt='p-icon-modal' className='project-icon-modal'></img>
+                                            <p>{project.expanded}</p>
+                                        </div>
+
+                                        <div>
+                                            <button className='modal-close-button' onClick=
+                                                {() => close()}>
+                                                    Close
+                                            </button>
+                                        </div>
+                                    </div>
+                                )
+                            }
+                                </Popup>
+                        <p className='project-desc'>{project.description}</p>
                         </td>
+
                         <td className='project-cell'>
-                            <h3>{project.name}</h3>
-                            <img src={project.icon} alt='p-icon' className='project-icon'></img>
-                            <p className='project-desc'>{project.description}</p>
+                        <h3>{project.name}</h3>
+                                <Popup className='popup'
+                                    trigger= {
+                                    <button>
+                                        <img src={project.icon} alt='p-icon' className='project-icon'></img>
+                                    </button>
+                                        } modal nested>
+                                        {
+                                        close => (
+                                    <div className='modal'>
+
+                                        <div className='modal-content'>
+                                            <h4>{project.name}</h4>
+                                            <img src={project.icon} alt='p-icon-modal' className='project-icon-modal'></img>
+                                            <p>{project.expanded}</p>
+                                        </div>
+
+                                        <div>
+                                            <button className='modal-close-button' onClick=
+                                                {() => close()}>
+                                                    Close
+                                            </button>
+                                        </div>
+                                    </div>
+                                )
+                            }
+                                </Popup>
+                        <p className='project-desc'>{project.description}</p>
                         </td>
                     </tr>
+
                     <tr className='row3'>
                         <td className='project-cell'>
-                            <h3>{project.name}</h3>
-                            <img src={project.icon} alt='p-icon' className='project-icon'></img>
-                            <p className='project-desc'>{project.description}</p>
+                        <h3>{project.name}</h3>
+                                <Popup className='popup'
+                                    trigger= {
+                                    <button>
+                                        <img src={project.icon} alt='p-icon' className='project-icon'></img>
+                                    </button>
+                                        } modal nested>
+                                        {
+                                        close => (
+                                    <div className='modal'>
+
+                                        <div className='modal-content'>
+                                            <h4>{project.name}</h4>
+                                            <img src={project.icon} alt='p-icon-modal' className='project-icon-modal'></img>
+                                            <p>{project.expanded}</p>
+                                        </div>
+
+                                        <div>
+                                            <button className='modal-close-button' onClick=
+                                                {() => close()}>
+                                                    Close
+                                            </button>
+                                        </div>
+                                    </div>
+                                )
+                            }
+                                </Popup>
+                        <p className='project-desc'>{project.description}</p>
                         </td>
+
                         <td className='project-cell'>
                             <h3>{project.name}</h3>
-                            <img src={project.icon} alt='p-icon' className='project-icon'></img>
-                            <p className='project-desc'>{project.description}</p>
+                                <Popup className='popup'
+                                    trigger= {
+                                    <button>
+                                        <img src={project.icon} alt='p-icon' className='project-icon'></img>
+                                    </button>
+                                        } modal nested>
+                                        {
+                                        close => (
+                                    <div className='modal'>
+
+                                        <div className='modal-content'>
+                                            <h4>{project.name}</h4>
+                                            <img src={project.icon} alt='p-icon-modal' className='project-icon-modal'></img>
+                                            <p>{project.expanded}</p>
+                                        </div>
+
+                                        <div>
+                                            <button className='modal-close-button' onClick=
+                                                {() => close()}>
+                                                    Close
+                                            </button>
+                                        </div>
+                                    </div>
+                                )
+                            }
+                                </Popup>
+                        <p className='project-desc'>{project.description}</p>
                         </td>
                     </tr> 
                    
