@@ -13,7 +13,7 @@ export default function Welcomebox() {
               </div>
           </header>
 
-          <img src={require('./profilePic.jpeg')} alt='profile-pic'></img>
+          <img src={require('./profilePic.jpeg')} alt='profile-pic' className='profile-pic'></img>
         </div>
     </div>
   )

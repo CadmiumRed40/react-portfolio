@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import Popup from 'reactjs-popup'
 //import 'reactjs-popup/dist/index.css';
 import '../Projects/Projects.css'
@@ -19,6 +19,17 @@ export default function Projects() {
         }
    ];
     
+   /*const [projects, setProjects] = useState("");
+   
+   useEffect(() => {
+    try {
+    fetch('http://localhost:8000/project')
+    .then((res) => res.json())
+    .then((data) => setProject(data.project));
+    }catch(error){
+        console.error('error')
+    }
+   },[]);*/
 
     return (
     <div>
@@ -39,7 +50,7 @@ export default function Projects() {
             </div>
 
             <div className='project-table-container'>
-            {projects.map ((project,index) => (
+                {projects.map ((project,index) => ( 
                 <table>
                     
                     <tr className='row1'>
