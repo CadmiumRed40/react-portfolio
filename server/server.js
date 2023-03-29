@@ -2,7 +2,7 @@ const express = require('express');
 const nodemailer = require('nodemailer');
 const cors = require('cors');
 const bodyParser = require('body-parser');
-require('dotenv').config
+require('dotenv').config();
 
 const app = express();
 
@@ -17,14 +17,17 @@ app.post('/send-email', (req, res) => {
     service: 'gmail',
     auth: {
         type: '0Auth2',
-        user: 'cabrerawebdev@gmail.com',
-        pass: process.env.KEY
+        user: process.env.EMAIL,
+        pass: process.env.KEY,
+        clientId: process.env.CLIENT_ID,
+        clientSecret: process.env.CLIENT_SECRET,
+        refreshToken: process.env.REFRESH_TOKEN
     }
   });
 
   const mailOptions = {
-    from: 'your_email_address@gmail.com',
-    to: 'recipient_email_address@gmail.com',
+    from: 'cabrerawebdev@gmail.com',
+    to: 'cabrerawebdev@gmail.com',
     subject: 'New message from your website',
     text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`
   };
