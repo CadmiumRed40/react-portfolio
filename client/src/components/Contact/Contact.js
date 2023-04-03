@@ -5,6 +5,7 @@ export default function ContactForm() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
+  const [isSent, setIsSent] = useState(false); //
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -14,6 +15,7 @@ export default function ContactForm() {
         setName('');
         setEmail('');
         setMessage('');
+        setIsSent(true)
       })
       .catch((err) => {
         console.error(err);
@@ -35,6 +37,7 @@ export default function ContactForm() {
         <textarea value={message} onChange={(e) => setMessage(e.target.value)} />
       </label>
       <button type="submit">Submit</button>
+      {isSent && <p>Message sent successfully!</p>}
     </form>
   );
 };
