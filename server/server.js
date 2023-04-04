@@ -15,19 +15,16 @@ app.post('/send-email', (req, res) => {
 
   const transporter = nodemailer.createTransport({
     service: 'gmail',
+    host:'smpt.gmail.com',
     auth: {
-        type: '0Auth2',
         user: process.env.EMAIL,
         pass: process.env.KEY,
-        clientId: process.env.CLIENT_ID,
-        clientSecret: process.env.CLIENT_SECRET,
-        refreshToken: process.env.REFRESH_TOKEN
     }
   });
 
   const mailOptions = {
-    from: 'cabrerawebdev@gmail.com',
-    to: 'cabrerawebdev@gmail.com',
+    from: process.env.EMAIL,
+    to: process.env.EMAIL,
     subject: 'New message from your website',
     text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`
   };
