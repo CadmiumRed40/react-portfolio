@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import './Contact.css'
 
 export default function ContactForm() {
   const [name, setName] = useState('');
@@ -39,19 +40,19 @@ export default function ContactForm() {
 
   return (
     <form onSubmit={handleSubmit}>
-      <label className='form-headers'>
+      <label className='form-headers email-row1'>
         Name:
         <input type="text" value={name} onChange={(e) => setName(e.target.value)} />
       </label>
-      <label className='form-headers'>
+      <label className='form-headers email-row1'>
         Email:
         <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
       </label>
-      <label className='form-headers'>
+      <label className='form-headers email-row2'>
         Message:
         <textarea value={message} onChange={(e) => setMessage(e.target.value)} />
       </label>
-      <button type="submit">Submit</button>
+      <button type="submit" className='email-submit-button'>Submit</button>
       {isSent && <p>Message sent successfully!</p>}
     </form>
   );
