@@ -4,7 +4,7 @@
     background-image: linear-gradient(to bottom, #000000, #000000ec, #00000042);
     border: 1px solid rgba(255, 255, 255, 0.755);
     box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.1);
-    border-radius: 5px;
+    border-radius: 4px;
     padding: 2px;   
   }
   
@@ -14,17 +14,20 @@
     justify-content: space-around;
   }
   
-  .nav-bar a {
+  .nav-bar a{
     text-decoration: none;
     color: white;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: bold;
     text-transform: uppercase;
     transition: 0.3s ease-in-out;
+    padding:15px;
+    border-radius: 4px;
   }
   
   .nav-bar a:hover {
-    color: #997cb5;
+    animation-duration: .5s;
+    background-color: #5a607f60;
   }
   
   @media only screen and (max-width: 600px) {

@@ -39,21 +39,27 @@ export default function ContactForm() {
   },[]);
 
   return (
+    <div className='contact-main-container'>
+      <div className='contact-form-container'>
     <form onSubmit={handleSubmit}>
+      <div className='name-mail-input'>
       <label className='form-headers email-row1'>
-        Name:
+        Name
         <input type="text" value={name} onChange={(e) => setName(e.target.value)} />
       </label>
       <label className='form-headers email-row1'>
-        Email:
+        Email
         <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
       </label>
+      </div>
       <label className='form-headers email-row2'>
-        Message:
+        Message
         <textarea value={message} onChange={(e) => setMessage(e.target.value)} />
       </label>
       <button type="submit" className='email-submit-button'>Submit</button>
-      {isSent && <p>Message sent successfully!</p>}
+      {isSent && <p className='email-confirmation'>Message sent successfully!</p>}
     </form>
+    </div>
+    </div>
   );
 };
