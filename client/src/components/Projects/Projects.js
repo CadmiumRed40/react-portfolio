@@ -4,11 +4,14 @@ import Popup from 'reactjs-popup'
 import '../Projects/Projects.css'
 //import Modal from 'react'
 import '../Projects/placeholder.jpg' 
+import '../Projects/images/MasterPigmentsWebsite.gif'
 
 
 export default function Projects() {
 
     var placeHolderIcon = require('../Projects/placeholder.jpg')
+    var ModernMasterGif = require('../Projects/images/MasterPigmentsWebsite.gif')
+
 
     const projects = [
         {
@@ -16,6 +19,11 @@ export default function Projects() {
             icon: placeHolderIcon,
             description: "Placeholder",
             expanded:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Donec massa sapien faucibus et molestie. Suspendisse faucibus interdum posuere lorem ipsum dolor sit amet."
+        },
+        {
+            name: "Modern Master Pigments",
+            icon: ModernMasterGif,
+            description: "Simple website for selling oil paints that exemplifies responsive web design"
         }
    ];
     
@@ -82,7 +90,7 @@ export default function Projects() {
                                 )
                             }
                                 </Popup>
-                        <p className='project-desc'>{project.description}</p>
+                        <tbody className='project-desc'>{project.description}</tbody>
                         </td>
 
                         <td className='project-cell'>
