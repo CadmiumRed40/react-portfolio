@@ -4,13 +4,13 @@ import Popup from 'reactjs-popup'
 import '../Projects/Projects.css'
 //import Modal from 'react'
 import '../Projects/placeholder.jpg' 
-import '../Projects/images/MasterPigmentsWebsite.gif'
+import '../Projects/MasterPigmentsWebsite.gif'
 
 
 export default function Projects() {
 
     var placeHolderIcon = require('../Projects/placeholder.jpg')
-    var ModernMasterGif = require('../Projects/images/MasterPigmentsWebsite.gif')
+    var ModernMasterGif = require('../Projects/MasterPigmentsWebsite.gif')
 
 
     const projects = [
@@ -23,7 +23,8 @@ export default function Projects() {
         {
             name: "Modern Master Pigments",
             icon: ModernMasterGif,
-            description: "Simple website for selling oil paints that exemplifies responsive web design"
+            description: "Oil Painting Merchant Website",
+            expanded: "Simple website for selling oil paints that exemplifies responsive web design"
         }
    ];
     
@@ -63,11 +64,11 @@ export default function Projects() {
                     
                     <tr className='row1'>
                         <td className='project-cell'>
-                            <h3>{project.name}</h3>
+                            <h3>{projects[1].name}</h3>
                                 <Popup className='popup'
                                     trigger= {
                                     <button>
-                                        <img src={project.icon} alt='p-icon' className='project-icon'></img>
+                                        <img src={projects[1].icon} alt='p-icon' className='project-icon'></img>
                                     </button>
                                         } modal nested>
                                         {
@@ -75,8 +76,8 @@ export default function Projects() {
                                     <div className='modal'>
 
                                         <div className='modal-content'>
-                                            <h4>{project.name}</h4>
-                                            <img src={project.icon} alt='p-icon-modal' className='project-icon-modal'></img>
+                                            <h4>{projects[1].name}</h4>
+                                            <img src={projects[1].icon} alt='p-icon-modal' className='project-icon-modal'></img>
                                             <p>{project.expanded}</p>
                                         </div>
 
@@ -90,7 +91,7 @@ export default function Projects() {
                                 )
                             }
                                 </Popup>
-                        <tbody className='project-desc'>{project.description}</tbody>
+                        <tbody className='project-desc'>{projects[1].description}</tbody>
                         </td>
 
                         <td className='project-cell'>
