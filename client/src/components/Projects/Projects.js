@@ -91,7 +91,7 @@ export default function Projects() {
                                 )
                             }
                                 </Popup>
-                        <tbody className='project-desc'>{projects[1].description}</tbody>
+                        <p className='project-desc'>{projects[1].description}</p>
                         </td>
 
                         <td className='project-cell'>
